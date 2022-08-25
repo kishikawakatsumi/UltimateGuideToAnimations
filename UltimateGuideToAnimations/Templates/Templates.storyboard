@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21223" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad12_9rounded" orientation="landscape" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21204"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Title Slide View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="Title" id="Y6W-OH-hqX" customClass="TitleSlideViewController" customModule="UltimateGuildeToAnimations" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Xj-Jq-qSh">
+                                <rect key="frame" x="98" y="406" width="1170" height="212.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Presentation Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YHE-8J-ltm">
+                                        <rect key="frame" x="0.0" y="0.0" width="1170" height="138.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="116"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Presentation Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MKF-48-9FG">
+                                        <rect key="frame" x="0.0" y="146.5" width="1170" height="66"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="55"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="MKF-48-9FG" secondAttribute="trailing" id="5z6-PT-fFZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="MKF-48-9FG" secondAttribute="bottom" id="BTr-x2-zcM"/>
+                                    <constraint firstItem="MKF-48-9FG" firstAttribute="leading" secondItem="8Xj-Jq-qSh" secondAttribute="leading" id="IcC-2l-3qz"/>
+                                    <constraint firstItem="MKF-48-9FG" firstAttribute="top" secondItem="YHE-8J-ltm" secondAttribute="bottom" constant="8" symbolic="YES" id="dOt-BC-rry"/>
+                                    <constraint firstItem="YHE-8J-ltm" firstAttribute="top" secondItem="8Xj-Jq-qSh" secondAttribute="top" id="i6o-fl-H0f"/>
+                                    <constraint firstAttribute="trailing" secondItem="YHE-8J-ltm" secondAttribute="trailing" id="iUW-6y-ZUy"/>
+                                    <constraint firstItem="YHE-8J-ltm" firstAttribute="leading" secondItem="8Xj-Jq-qSh" secondAttribute="leading" id="qRY-yJ-oRP"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author and Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1vU-C5-30s">
+                                <rect key="frame" x="98" y="941" width="1170" height="43"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1vU-C5-30s" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="98" id="1tF-E2-I33"/>
+                            <constraint firstItem="8Xj-Jq-qSh" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="98" id="Iuo-rQ-sZL"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="8Xj-Jq-qSh" secondAttribute="trailing" constant="98" id="MSa-Mv-OnY"/>
+                            <constraint firstItem="8Xj-Jq-qSh" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="MmU-hk-3FG"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="1vU-C5-30s" secondAttribute="trailing" constant="98" id="fcx-a9-skp"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="1vU-C5-30s" secondAttribute="bottom" constant="20" id="jYx-G6-xpl"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="authorAndDateLabel" destination="1vU-C5-30s" id="34E-D6-7XE"/>
+                        <outlet property="presentationSubtitleLabel" destination="MKF-48-9FG" id="Y15-5a-lbx"/>
+                        <outlet property="presentationTitleLabel" destination="YHE-8J-ltm" id="khr-ab-5iK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.91469194312796" y="3.0769230769230766"/>
+        </scene>
+        <!--Title And Bullets Slide View Controller-->
+        <scene sceneID="ZsI-Li-mZJ">
+            <objects>
+                <viewController storyboardIdentifier="TitleAndBullets" id="c98-eW-Pm9" customClass="TitleAndBulletsSlideViewController" customModule="UltimateGuildeToAnimations" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YHh-tM-gCV">
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Slide Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nYD-ig-CTR">
+                                <rect key="frame" x="98" y="110" width="1170" height="101.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="85"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Slide Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WcE-1z-6Ij">
+                                <rect key="frame" x="98" y="219.5" width="1170" height="66"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" priority="750" constant="66" id="2Fq-VA-k8z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="55"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="38" translatesAutoresizingMaskIntoConstraints="NO" id="JrP-UL-hID">
+                                <rect key="frame" x="98" y="354" width="1170" height="0.0"/>
+                                <subviews>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mAd-yw-NsZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="117.5" height="0.0"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="48"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="nZf-me-WMY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nYD-ig-CTR" firstAttribute="top" secondItem="nZf-me-WMY" secondAttribute="top" constant="86" id="0Be-6w-usl"/>
+                            <constraint firstItem="nZf-me-WMY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="JrP-UL-hID" secondAttribute="bottom" id="7OO-o4-w0B"/>
+                            <constraint firstItem="JrP-UL-hID" firstAttribute="leading" secondItem="nZf-me-WMY" secondAttribute="leading" constant="98" id="Ccw-ar-IZ7"/>
+                            <constraint firstItem="WcE-1z-6Ij" firstAttribute="top" secondItem="nYD-ig-CTR" secondAttribute="bottom" constant="8" symbolic="YES" id="Czh-sp-dld"/>
+                            <constraint firstItem="JrP-UL-hID" firstAttribute="top" secondItem="nZf-me-WMY" secondAttribute="top" constant="330" id="E1N-Ia-ILr"/>
+                            <constraint firstItem="nZf-me-WMY" firstAttribute="trailing" secondItem="WcE-1z-6Ij" secondAttribute="trailing" constant="98" id="HC1-Qc-KEd"/>
+                            <constraint firstItem="nZf-me-WMY" firstAttribute="trailing" secondItem="JrP-UL-hID" secondAttribute="trailing" constant="98" id="YzO-Zn-4Vk"/>
+                            <constraint firstItem="nYD-ig-CTR" firstAttribute="leading" secondItem="nZf-me-WMY" secondAttribute="leading" constant="98" id="dXF-hi-oUw"/>
+                            <constraint firstItem="nZf-me-WMY" firstAttribute="trailing" secondItem="nYD-ig-CTR" secondAttribute="trailing" constant="98" id="pPl-CI-Kwg"/>
+                            <constraint firstItem="WcE-1z-6Ij" firstAttribute="leading" secondItem="nZf-me-WMY" secondAttribute="leading" constant="98" id="r8L-7R-Ihk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bulletsContainer" destination="JrP-UL-hID" id="KYe-tr-mBM"/>
+                        <outlet property="bulletsLabelTemplate" destination="mAd-yw-NsZ" id="mGi-Eo-fEg"/>
+                        <outlet property="slideSubtitleLabel" destination="WcE-1z-6Ij" id="37C-L5-NUO"/>
+                        <outlet property="slideTitleLabel" destination="nYD-ig-CTR" id="xlJ-Z0-DNf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AYQ-bD-htM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137" y="708"/>
+        </scene>
+        <!--Section Slide View Controller-->
+        <scene sceneID="fV6-LR-siN">
+            <objects>
+                <viewController storyboardIdentifier="Section" id="Vga-KL-5em" customClass="SectionSlideViewController" customModule="UltimateGuildeToAnimations" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7OS-JI-nzb">
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Section Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ugY-fH-UHb">
+                                <rect key="frame" x="98" y="443" width="1170" height="138.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="116"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="eTV-TH-Ffm"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ugY-fH-UHb" firstAttribute="leading" secondItem="eTV-TH-Ffm" secondAttribute="leading" constant="98" id="NHl-9t-E8X"/>
+                            <constraint firstItem="eTV-TH-Ffm" firstAttribute="trailing" secondItem="ugY-fH-UHb" secondAttribute="trailing" constant="98" id="q5o-Q3-3XN"/>
+                            <constraint firstItem="ugY-fH-UHb" firstAttribute="centerY" secondItem="7OS-JI-nzb" secondAttribute="centerY" id="shc-fj-UaP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="sectionTitleLabel" destination="ugY-fH-UHb" id="gNN-dk-giV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jNP-6D-l72" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137" y="1424"/>
+        </scene>
+        <!--Title Only Slide View Controller-->
+        <scene sceneID="w8D-KB-4mQ">
+            <objects>
+                <viewController storyboardIdentifier="TitleOnly" id="5dB-Nb-0Hm" customClass="TitleOnlySlideViewController" customModule="UltimateGuildeToAnimations" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="R9P-DK-3Z7">
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Slide Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="evw-EY-zvu">
+                                <rect key="frame" x="98" y="110" width="1170" height="101.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="85"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Slide Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rQO-n9-0h6">
+                                <rect key="frame" x="98" y="219.5" width="1170" height="66"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="55"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oDP-aM-xIN">
+                                <rect key="frame" x="98" y="354" width="1170" height="630"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="BUr-oo-fvz"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="BUr-oo-fvz" firstAttribute="trailing" secondItem="evw-EY-zvu" secondAttribute="trailing" constant="98" id="2Qg-Pc-sYs"/>
+                            <constraint firstItem="rQO-n9-0h6" firstAttribute="leading" secondItem="BUr-oo-fvz" secondAttribute="leading" constant="98" id="5Xs-ei-bVw"/>
+                            <constraint firstItem="BUr-oo-fvz" firstAttribute="trailing" secondItem="oDP-aM-xIN" secondAttribute="trailing" constant="98" id="LuK-9P-ZhD"/>
+                            <constraint firstItem="evw-EY-zvu" firstAttribute="leading" secondItem="BUr-oo-fvz" secondAttribute="leading" constant="98" id="PfM-B9-2LH"/>
+                            <constraint firstItem="rQO-n9-0h6" firstAttribute="top" secondItem="evw-EY-zvu" secondAttribute="bottom" constant="8" symbolic="YES" id="QLl-mI-4Hr"/>
+                            <constraint firstItem="evw-EY-zvu" firstAttribute="top" secondItem="BUr-oo-fvz" secondAttribute="top" constant="86" id="Qqy-MR-7rF"/>
+                            <constraint firstItem="oDP-aM-xIN" firstAttribute="leading" secondItem="BUr-oo-fvz" secondAttribute="leading" constant="98" id="RRq-dS-hjt"/>
+                            <constraint firstItem="BUr-oo-fvz" firstAttribute="trailing" secondItem="rQO-n9-0h6" secondAttribute="trailing" constant="98" id="ZoL-nA-AuB"/>
+                            <constraint firstItem="rQO-n9-0h6" firstAttribute="top" secondItem="evw-EY-zvu" secondAttribute="bottom" constant="8" symbolic="YES" id="cSa-Yi-dYv"/>
+                            <constraint firstItem="oDP-aM-xIN" firstAttribute="top" secondItem="BUr-oo-fvz" secondAttribute="top" constant="330" id="iyf-OG-70z"/>
+                            <constraint firstItem="BUr-oo-fvz" firstAttribute="bottom" secondItem="oDP-aM-xIN" secondAttribute="bottom" constant="20" id="xTo-h8-3Fa"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="contentViewContainer" destination="oDP-aM-xIN" id="6m9-ku-YQx"/>
+                        <outlet property="slideSubtitleLabel" destination="rQO-n9-0h6" id="XAl-xm-8PK"/>
+                        <outlet property="slideTitleLabel" destination="evw-EY-zvu" id="dLT-Ma-xjq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wZz-g5-2wR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137" y="2125"/>
+        </scene>
+        <!--Statement Slide View Controller-->
+        <scene sceneID="2Ee-1p-GyV">
+            <objects>
+                <viewController storyboardIdentifier="Statement" id="BUv-zf-J0Y" customClass="StatementSlideViewController" customModule="UltimateGuildeToAnimations" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HFw-xe-SBH">
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Statement" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lJi-VE-Xhk">
+                                <rect key="frame" x="98" y="443" width="1170" height="138.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="116"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="VX7-5h-UYi"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lJi-VE-Xhk" firstAttribute="centerY" secondItem="HFw-xe-SBH" secondAttribute="centerY" id="2Pb-z3-Gx4"/>
+                            <constraint firstItem="VX7-5h-UYi" firstAttribute="trailing" secondItem="lJi-VE-Xhk" secondAttribute="trailing" constant="98" id="bUy-y2-UX5"/>
+                            <constraint firstItem="lJi-VE-Xhk" firstAttribute="leading" secondItem="VX7-5h-UYi" secondAttribute="leading" constant="98" id="kRq-Ou-PQJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="statementLabel" destination="lJi-VE-Xhk" id="nWc-I9-zYk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6UP-co-mwg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137" y="2843"/>
+        </scene>
+        <!--Quote Slide View Controller-->
+        <scene sceneID="Gk2-f6-YJN">
+            <objects>
+                <viewController storyboardIdentifier="Quote" id="yZK-fr-4PK" customClass="QuoteSlideViewController" customModule="UltimateGuildeToAnimations" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bZ3-2V-feN">
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qIg-zF-eqS">
+                                <rect key="frame" x="120" y="466.5" width="1126" height="91.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="“Notable Quote”">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="85" name="HelveticaNeue-Medium"/>
+                                            <real key="NSKern" value="-1.7"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" firstLineHeadIndent="13.299999999999997" headIndent="50.299999999999997" lineHeightMultiple="0.90000000000000002" defaultTabInterval="191.94999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lik-Jm-UNe">
+                                <rect key="frame" x="168" y="842.5" width="1100" height="43"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Attribution">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="36" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="65" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Z4u-8Q-flL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qIg-zF-eqS" firstAttribute="centerY" secondItem="bZ3-2V-feN" secondAttribute="centerY" id="KCN-Sj-nDB"/>
+                            <constraint firstItem="Lik-Jm-UNe" firstAttribute="leading" secondItem="Z4u-8Q-flL" secondAttribute="leading" constant="168" id="UGT-My-xfj"/>
+                            <constraint firstItem="qIg-zF-eqS" firstAttribute="leading" secondItem="Z4u-8Q-flL" secondAttribute="leading" constant="120" id="Z7y-fU-7ZL"/>
+                            <constraint firstItem="Lik-Jm-UNe" firstAttribute="top" secondItem="qIg-zF-eqS" secondAttribute="top" constant="376" id="aZk-un-i67"/>
+                            <constraint firstAttribute="trailing" secondItem="qIg-zF-eqS" secondAttribute="trailing" constant="120" id="fJx-8W-P35"/>
+                            <constraint firstItem="Z4u-8Q-flL" firstAttribute="trailing" secondItem="Lik-Jm-UNe" secondAttribute="trailing" constant="98" id="hcN-fo-gY4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="attributionLabel" destination="Lik-Jm-UNe" id="ky8-fM-BYF"/>
+                        <outlet property="quoteLabel" destination="qIg-zF-eqS" id="mQW-B9-JHy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0I4-id-uv3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137" y="3581"/>
+        </scene>
+        <!--Blank Slide View Controller-->
+        <scene sceneID="mLJ-zk-c3w">
+            <objects>
+                <viewController storyboardIdentifier="Blank" id="cZB-jE-9C8" customClass="BlankSlideViewController" customModule="UltimateGuildeToAnimations" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kLW-tN-1vU">
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="00x-uW-5sS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9IW-7f-xZE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137" y="4301"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
