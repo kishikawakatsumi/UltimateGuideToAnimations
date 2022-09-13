@@ -15,7 +15,7 @@ class MainController: UIViewController, PresentationTransitionControllerDelegate
     let transitionController = PresentationTransitionController(
       slides: [
         TitleSlideViewController.makeViewController {
-          $0.presentationTitle = NSLocalizedString("アニメーションのすべて", comment: "")
+          $0.presentationTitle = NSLocalizedString("アニメーションAPIのすべて", comment: "")
           $0.presentationSubtitle = NSLocalizedString("iOSDC 2022", comment: "")
           $0.authorAndDate = NSLocalizedString("kishikawa katsumi", comment: "")
         },
